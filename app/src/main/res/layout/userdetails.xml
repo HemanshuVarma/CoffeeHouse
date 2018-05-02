@@ -44,6 +44,7 @@
         android:layout_marginRight="@dimen/margin_20"
         android:background="@color/brown_200"
         android:hint="@string/name"
+        android:paddingLeft="@dimen/margin_10"
         android:inputType="text|textCapWords" />
 
     <EditText
@@ -56,6 +57,7 @@
         android:layout_marginRight="@dimen/margin_20"
         android:background="@color/brown_200"
         android:inputType="phone"
+        android:paddingLeft="@dimen/margin_10"
         android:hint="@string/mobile_number"/>
 
     <ImageView

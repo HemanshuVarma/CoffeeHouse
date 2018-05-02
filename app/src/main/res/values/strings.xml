@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Coffee \nHouse</string>
+    <string name="app_name">Coffee House</string>
     <string name="tagLine">The Premium Coffee Store</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="image_view_desc">Background Image</string>
