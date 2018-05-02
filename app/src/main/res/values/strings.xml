@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Coffee \nHouse</string>
+    <string name="tagLine">The Premium Coffee Store</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="image_view_desc">Background Image</string>
+    <string name="min_quantity">You cannot order Negative Coffees</string>
+    <string name="max_quantity">You cannot have more than 100 Coffees</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">10 digit Mobile number</string>
+    <string name="imin">I"'"m In</string>
+    <string name="user_activity">User Activity Screen</string>
+    <string name="welcome_guest">Welcome Guest!</string>
+    <string name="info">We need some Information to serve you better.</string>
+
+    <!--CardView Text's-->
+    <string name="cappuccino">Cappuccino</string>
+    <string name="note_cap">Note: Per cup ₹50 \n Hot Coffee ₹5 \nBrewed Coffee ₹7</string>
+    <string name="caffe_mocha">Caffe Mocha</string>
+    <string name="note_mocha">Note: Per cup ₹70 \n Hot Coffee ₹5 \nBrewed Coffee ₹7</string>
+    <string name="frappe">Frappe</string>
+    <string name="note_frappe">Note: Per cup ₹75 \n Hot Coffee ₹5 \nBrewed Coffee ₹7</string>
+    <string name="espresso">Espresso</string>
+    <string name="note_espresso">Note: Per cup ₹90 \n Hot Coffee ₹5 \nBrewed Coffee ₹7</string>
+    <string name="extras">Extra&apos;s</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="hot_coffee">Hot Coffee</string>
+    <string name="brewed">Brewed</string>
+    <string name="quantity">Quantity</string>
+
+    <!--Footer-->
+    <string name="summary">View Summary</string>
+    <string name="confirm_order">Confirm Order</string>
+
+    <!--Dialog Content-->
+    <string name="title">Order Summary</string>
+    <string name="okay">Okay</string>
+
+    <!--Order Summary-->
+    <string name="view_line">--------------------------------------------------------</string>
+    <string name="name_summary">Name : </string>
+    <string name="phone_no_summary">Phone No. : </string>
+    <string name="hot_coffee_summary">Hot Coffee : </string>
+    <string name="brewed_coffee_summary">Brewed Coffee : </string>
+    <string name="quantity_summary">Quantity : </string>
+    <string name="price">Price : ₹ </string>
+    <string name="total_price">Total Price : ₹ </string>
+
+    <!--Mail Order-->
+    <string name="order_subject">Coffee House Order Summary for : </string>
+    <string name="thank_you">Thank You for Ordering!</string>
+
+</resources>
