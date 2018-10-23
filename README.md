@@ -19,7 +19,7 @@ App made under **Google India Challenge Scholarship Program**.
 
 [![Youtube](https://user-images.githubusercontent.com/36810824/47357866-a04c2600-d6e5-11e8-860b-60840d810f6e.png)](https://youtu.be/JlCDK-Xrlw8)
 
-
+#### Featured on: [Medium](https://medium.com/@rneema939/another-ordinary-story-from-ordinary-to-honorable-ordinary-with-udacity-5b2f4e62d663) by Ritika Neema
 #### :star2: If you love it!
 
 #### Connect with me on [Twitter](http://twitter.com/varmahemanshu) [LinkedIn](https://www.linkedin.com/in/HemanshuVarma)
