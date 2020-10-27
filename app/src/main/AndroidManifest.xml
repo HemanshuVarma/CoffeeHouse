@@ -4,25 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_coffee_house"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_coffee_house_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:label="@string/app_name" >
-
-
-        </activity>
-        <activity android:name=".UserDetails"
-            android:label="@string/user_activity">
-
-        </activity>
-        <activity android:name=".Splash"
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".UserDetails"
+            android:label="@string/user_activity" />
+        <activity
+            android:name=".Splash"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
