@@ -16,7 +16,7 @@
             android:name=".UserDetails"
             android:label="@string/user_activity" />
         <activity
-            android:name=".Splash"
+            android:name=".SplashActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

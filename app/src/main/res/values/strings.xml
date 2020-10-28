@@ -7,7 +7,7 @@
     <string name="max_quantity">You cannot have more than 100 Coffees</string>
     <string name="name">Name</string>
     <string name="mobile_number">10 digit Mobile number</string>
-    <string name="imin">I"'"m In</string>
+    <string name="imin">I\'m In</string>
     <string name="user_activity">User Activity Screen</string>
     <string name="welcome_guest">Welcome Guest!</string>
     <string name="info">We need some Information to serve you better.</string>

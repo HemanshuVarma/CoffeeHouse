@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.os.Handler;
 
 /**
- * This is an Splash Activity with delay of 4 Sec.
+ * This is an Splash Activity with delay of 2 Sec.
  */
-public class Splash extends Activity {
+public class SplashActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(Splash.this, UserDetails.class));
+                startActivity(new Intent(SplashActivity.this, UserDetails.class));
                 finish();
             }
-        }, 4000);
+        }, 2000);
     }
 }
