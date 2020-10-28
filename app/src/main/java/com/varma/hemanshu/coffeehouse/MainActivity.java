@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when increment button is clicked.
      */
     public void increment(View view) {
-        Button incButtonCappuccino = (Button) findViewById(R.id.IncButtonViewCappuccino);
-        Button incButtonMocha = (Button) findViewById(R.id.IncButtonViewMocha);
-        Button incButtonFrappe = (Button) findViewById(R.id.IncButtonViewFrappe);
-        Button incButtonEspresso = (Button) findViewById(R.id.IncButtonViewEspresso);
+        Button incButtonCappuccino = findViewById(R.id.IncButtonViewCappuccino);
+        Button incButtonMocha = findViewById(R.id.IncButtonViewMocha);
+        Button incButtonFrappe = findViewById(R.id.IncButtonViewFrappe);
+        Button incButtonEspresso = findViewById(R.id.IncButtonViewEspresso);
         switch (view.getId()) {
             case R.id.IncButtonViewCappuccino:
                 if (quantityCap == 100) {
@@ -84,10 +84,10 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when decrement button is clicked.
      */
     public void decrement(View view) {
-        Button decButtonCappuccino = (Button) findViewById(R.id.decButtonViewCappuccino);
-        Button decButtonMocha = (Button) findViewById(R.id.decButtonViewMocha);
-        Button decButtonFrappe = (Button) findViewById(R.id.decButtonViewFrappe);
-        Button decButtonEspresso = (Button) findViewById(R.id.decButtonViewEspresso);
+        Button decButtonCappuccino = findViewById(R.id.decButtonViewCappuccino);
+        Button decButtonMocha = findViewById(R.id.decButtonViewMocha);
+        Button decButtonFrappe = findViewById(R.id.decButtonViewFrappe);
+        Button decButtonEspresso = findViewById(R.id.decButtonViewEspresso);
         switch (view.getId()) {
             case R.id.decButtonViewCappuccino:
                 if (quantityCap == 0) {
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value of CAPPUCCINO on screen.
      */
     private void displayQuantityCap(int number) {
-        TextView quantityTextViewCap = (TextView) findViewById(R.id.quantity_text_view_cap);
+        TextView quantityTextViewCap = findViewById(R.id.quantity_text_view_cap);
         quantityTextViewCap.setText("" + number);
 
     }
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value of CAFFE MOCHA on screen.
      */
     private void displayQuantityMocha(int number) {
-        TextView quantityTextViewMocha = (TextView) findViewById(R.id.quantity_text_view_mocha);
+        TextView quantityTextViewMocha = findViewById(R.id.quantity_text_view_mocha);
         quantityTextViewMocha.setText("" + number);
 
     }
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value of FRAPPE on screen.
      */
     private void displayQuantityFrappe(int number) {
-        TextView quantityTextViewFrappe = (TextView) findViewById(R.id.quantity_text_view_frappe);
+        TextView quantityTextViewFrappe = findViewById(R.id.quantity_text_view_frappe);
         quantityTextViewFrappe.setText("" + number);
 
     }
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value of ESPRESSO on screen.
      */
     private void displayQuantityEspresso(int number) {
-        TextView quantityTextViewEspresso = (TextView) findViewById(R.id.quantity_text_view_espresso);
+        TextView quantityTextViewEspresso = findViewById(R.id.quantity_text_view_espresso);
         quantityTextViewEspresso.setText("" + number);
 
     }
@@ -174,31 +174,31 @@ public class MainActivity extends AppCompatActivity {
     public void viewSummary(View view) {
         int finalPrice;
         // Checks for HotCoffee Extra's cappuccino
-        CheckBox addHotCoffeeCap = (CheckBox) findViewById(R.id.HotCoffeeCap);
+        CheckBox addHotCoffeeCap = findViewById(R.id.HotCoffeeCap);
         boolean hasHotCoffeeCap = addHotCoffeeCap.isChecked();
         //Checks for Brewed Coffee Extra's for Cappuccino
-        CheckBox addBrewedCoffeeCap = (CheckBox) findViewById(R.id.BrewedCap);
+        CheckBox addBrewedCoffeeCap = findViewById(R.id.BrewedCap);
         boolean hasBrewedCoffeeCap = addBrewedCoffeeCap.isChecked();
 
         // Checks for HotCoffee Extra's Mocha
-        CheckBox addHotCoffeeMocha = (CheckBox) findViewById(R.id.HotCoffeeMocha);
+        CheckBox addHotCoffeeMocha = findViewById(R.id.HotCoffeeMocha);
         boolean hasHotCoffeeMocha = addHotCoffeeMocha.isChecked();
         //Checks for Brewed Coffee Extra's for Mocha
-        CheckBox addBrewedCoffeeMocha = (CheckBox) findViewById(R.id.BrewedMocha);
+        CheckBox addBrewedCoffeeMocha = findViewById(R.id.BrewedMocha);
         boolean hasBrewedCoffeeMocha = addBrewedCoffeeMocha.isChecked();
 
         // Checks for HotCoffee Extra's Frappe
-        CheckBox addHotCoffeeFrappe = (CheckBox) findViewById(R.id.HotCoffeeFrappe);
+        CheckBox addHotCoffeeFrappe = findViewById(R.id.HotCoffeeFrappe);
         boolean hasHotCoffeeFrappe = addHotCoffeeFrappe.isChecked();
         //Checks for Brewed Coffee Extra's for frappe
-        CheckBox addBrewedCoffeeFrappe = (CheckBox) findViewById(R.id.BrewedFrappe);
+        CheckBox addBrewedCoffeeFrappe = findViewById(R.id.BrewedFrappe);
         boolean hasBrewedCoffeeFrappe = addBrewedCoffeeFrappe.isChecked();
 
         // Checks for HotCoffee Extra's Espresso
-        CheckBox addHotCoffeeEspresso = (CheckBox) findViewById(R.id.HotCoffeeEspresso);
+        CheckBox addHotCoffeeEspresso = findViewById(R.id.HotCoffeeEspresso);
         boolean hasHotCoffeeEspresso = addHotCoffeeEspresso.isChecked();
         //Checks for Brewed Coffee Extra's for Espresso
-        CheckBox addBrewedCoffeeEspresso = (CheckBox) findViewById(R.id.BrewedEspresso);
+        CheckBox addBrewedCoffeeEspresso = findViewById(R.id.BrewedEspresso);
         boolean hasBrewedCoffeeEspresso = addBrewedCoffeeEspresso.isChecked();
 
         int priceCap = calculatePriceCap(hasHotCoffeeCap, hasBrewedCoffeeCap);

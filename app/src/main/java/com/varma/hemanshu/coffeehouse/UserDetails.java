@@ -17,12 +17,13 @@ public class UserDetails extends Activity {
         setContentView(R.layout.userdetails);
 
     }
-    public void UserActivity(View view){
+
+    public void UserActivity(View view) {
         Intent MyIntent = new Intent(UserDetails.this, MainActivity.class);
-        EditText nameFromEditText = (EditText) findViewById(R.id.NameField);
+        EditText nameFromEditText = findViewById(R.id.NameField);
         String name = nameFromEditText.getText().toString();
-        EditText phone_NoFromEditText = (EditText) findViewById(R.id.PhoneNo);
-        String  phone_no = phone_NoFromEditText.getText().toString();
+        EditText phone_NoFromEditText = findViewById(R.id.PhoneNo);
+        String phone_no = phone_NoFromEditText.getText().toString();
         MyIntent.putExtra("Name", name);
         MyIntent.putExtra("Phone_No", phone_no);
         startActivity(MyIntent);
