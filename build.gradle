@@ -1,7 +1,21 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+    ext {
+        //App dependencies
+        appcompatVersion = '1.2.0'
+        constraintLayoutVersion = '2.0.4'
+        cardviewVersion = '1.0.0'
+        materialVersion = '1.2.1'
+
+        //Testing dependencies Unit tests (Local)
+        junitVersion = '4.12'
+
+        //Testing dependencies Integration tests (Instrumentation)
+        junitExtVersion = '1.1.2'
+        espressoCoreVersion = '3.3.0'
+
+    }
     repositories {
         google()
         jcenter()

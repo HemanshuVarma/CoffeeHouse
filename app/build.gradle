@@ -7,7 +7,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName "1.1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
@@ -20,11 +20,17 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.3'
-    implementation 'com.google.android.material:material:1.2.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //App dependencies
+    implementation "androidx.appcompat:appcompat:${appcompatVersion}"
+    implementation "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}"
+    implementation "androidx.cardview:cardview:${cardviewVersion}"
+    implementation "com.google.android.material:material:${materialVersion}"
+
+    //Testing dependencies Unit tests (Local)
+    testImplementation "junit:junit:${junitVersion}"
+
+    //Testing dependencies Integration tests (Instrumentation)
+    androidTestImplementation "androidx.test.ext:junit:${junitExtVersion}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${espressoCoreVersion}"
 }
