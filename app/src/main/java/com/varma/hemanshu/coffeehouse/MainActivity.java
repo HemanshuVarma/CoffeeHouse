@@ -209,8 +209,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Intent for getting name from UserActivity.
         Intent i = getIntent();
-        name = i.getStringExtra("Name");
-        String phone_no = i.getStringExtra("Phone_No");
+        name = i.getStringExtra("NAME");
+        String phone_no = i.getStringExtra("PHONE_NO");
         summaryString = createSummary(name, phone_no, hasHotCoffeeCap, hasBrewedCoffeeCap, priceCap, hasHotCoffeeMocha, hasBrewedCoffeeMocha, priceMocha, hasHotCoffeeFrappe, hasBrewedCoffeeFrappe, priceFrappe, hasHotCoffeeEspresso, hasBrewedCoffeeEspresso, priceEspresso, finalPrice);
         displayMessage();
 
