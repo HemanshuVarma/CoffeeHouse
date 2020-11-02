@@ -1,7 +1,16 @@
 # CoffeeHouse - An Coffee Ordering App
 App made under **Google India Challenge Scholarship Program**.
 
-### :warning: UNDER MAINTENANCE: Project is being migrated to AndroidX and in Kotlin
+### :warning: UNDER MAINTENANCE :warning: 
+**Current Status:**
+- [X] AndroidX Migration
+- [ ] Refactor to Kotlin
+- [ ] Fix Lint issues
+- [ ] Crashlytics Integration
+- [ ] Notification Service
+- [ ] Use Jetpack Components
+- [ ] Code Optimization
+
 ### Concepts used:
 
 * Splash Screen
