@@ -75,7 +75,9 @@
             android:id="@+id/ViewSummaryButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/margin_16"
             android:layout_marginLeft="@dimen/margin_16"
             android:onClick="viewSummary"
             android:text="@string/summary" />
@@ -83,7 +85,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_16"
             android:layout_marginRight="@dimen/margin_16"
             android:onClick="mailOrder"
             android:text="@string/confirm_order" />

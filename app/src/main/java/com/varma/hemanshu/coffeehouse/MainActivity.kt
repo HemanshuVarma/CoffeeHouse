@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
     private var quantityMocha = 0
     private var quantityFrappe = 0
     private var quantityEspresso = 0
-    var summaryString: String? = null
-    var name: String? = null
+    private var summaryString: String? = null
+    private var name: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity() {
     /**
      * This method is called when VIEW SUMMARY Button is clicked.
      */
-    fun viewSummary(view: View?) {
+    fun viewSummary(view: View) {
         val finalPrice: Int
         // Checks for HotCoffee Extra's cappuccino
         val addHotCoffeeCap = findViewById<CheckBox>(R.id.HotCoffeeCap)
@@ -388,7 +388,7 @@ class MainActivity : AppCompatActivity() {
      * This method is invoked when CONFIRM ORDER is clicked.
      * It also passes the Summary to Mail using Intent.
      */
-    fun mailOrder(view: View?) {
+    fun mailOrder(view: View) {
         val subject = getString(R.string.order_subject) + name
         Toast.makeText(this@MainActivity, R.string.thank_you, Toast.LENGTH_LONG).show()
         val intent = Intent(Intent.ACTION_SENDTO)

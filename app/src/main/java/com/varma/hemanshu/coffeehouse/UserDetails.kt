@@ -16,7 +16,7 @@ class UserDetails : Activity() {
     }
 
     //Triggered from XML
-    fun userActivity(view: View?) {
+    fun userActivity(view: View) {
         val myIntent = Intent(this, MainActivity::class.java)
         val nameFromEditText = findViewById<EditText>(R.id.NameField)
         val name = nameFromEditText.text.toString()
