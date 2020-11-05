@@ -1,10 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.varma.hemanshu.coffeehouse"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.1.0"
@@ -22,15 +23,20 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     //App dependencies
-    implementation "androidx.appcompat:appcompat:${appcompatVersion}"
-    implementation "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}"
-    implementation "androidx.cardview:cardview:${cardviewVersion}"
-    implementation "com.google.android.material:material:${materialVersion}"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "androidx.cardview:cardview:$cardview_version"
+    implementation "com.google.android.material:material:$material_version"
+
+    //Debug implementation for crash info
+    debugImplementation "com.github.haroldadmin:WhatTheStack:$what_the_stack_version"
 
     //Testing dependencies Unit tests (Local)
-    testImplementation "junit:junit:${junitVersion}"
+    testImplementation "junit:junit:$junit_version"
 
     //Testing dependencies Integration tests (Instrumentation)
-    androidTestImplementation "androidx.test.ext:junit:${junitExtVersion}"
-    androidTestImplementation "androidx.test.espresso:espresso-core:${espressoCoreVersion}"
+    androidTestImplementation "androidx.test.ext:junit:$junit_ext_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core_version"
+    implementation "androidx.core:core-ktx:$kotlin_core"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

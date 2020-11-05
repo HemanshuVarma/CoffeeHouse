@@ -7,33 +7,35 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/coffee_house"
         android:layout_above="@id/WelcomeUser"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin_16"
-        android:paddingTop="@dimen/margin_16"/>
+        android:paddingTop="@dimen/margin_16"
+        android:src="@drawable/coffee_house" />
 
     <TextView
         android:id="@+id/WelcomeUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_guest"
         android:layout_above="@id/Info"
-        android:textSize="@dimen/text_size_26"
-        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
         android:layout_marginLeft="@dimen/margin_16"
-        android:textColor="@color/white"/>
+        android:layout_marginBottom="@dimen/margin_16"
+        android:text="@string/welcome_guest"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_26" />
 
     <TextView
         android:id="@+id/Info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/NameField"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
         android:text="@string/info"
         android:textColor="@color/white"
-        android:layout_above="@id/NameField"
-        android:textSize="@dimen/text_size_16"
-        android:layout_marginBottom="@dimen/margin_16"
-        android:layout_marginLeft="@dimen/margin_16"/>
+        android:textSize="@dimen/text_size_16" />
 
     <EditText
         android:id="@+id/NameField"
@@ -44,40 +46,47 @@
         android:layout_marginRight="@dimen/margin_20"
         android:background="@color/brown_200"
         android:hint="@string/name"
+        android:inputType="text|textCapWords"
+        android:paddingStart="@dimen/margin_10"
         android:paddingLeft="@dimen/margin_10"
-        android:inputType="text|textCapWords" />
+        android:paddingEnd="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10" />
 
     <EditText
         android:id="@+id/PhoneNo"
-        android:layout_below="@id/NameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/NameField"
         android:layout_marginLeft="@dimen/margin_20"
         android:layout_marginTop="@dimen/margin_20"
         android:layout_marginRight="@dimen/margin_20"
         android:background="@color/brown_200"
+        android:hint="@string/mobile_number"
         android:inputType="phone"
+        android:paddingStart="@dimen/margin_10"
         android:paddingLeft="@dimen/margin_10"
-        android:hint="@string/mobile_number"/>
+        android:paddingEnd="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/premium_coffee"
         android:layout_below="@id/PhoneNo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_16"
-        android:alpha="0.7"/>
+        android:alpha="0.7"
+        android:src="@drawable/premium_coffee" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/margin_16"
-        android:onClick="UserActivity"
+        android:background="@android:color/transparent"
+        android:onClick="userActivity"
         android:text="@string/imin"
-        android:textColor="@color/white"
-        android:background="@android:color/transparent"/>
+        android:textColor="@color/white" />
 
 </RelativeLayout>
