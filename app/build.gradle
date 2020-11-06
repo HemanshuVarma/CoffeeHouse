@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 30
@@ -22,11 +24,18 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //Google Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+
     //App dependencies
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "androidx.cardview:cardview:$cardview_version"
     implementation "com.google.android.material:material:$material_version"
+
+    //Firebase Services
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
 
     //Debug implementation for crash info
     debugImplementation "com.github.haroldadmin:WhatTheStack:$what_the_stack_version"
