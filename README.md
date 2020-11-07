@@ -5,8 +5,8 @@ App made under **Google India Challenge Scholarship Program**.
 **Current Status:**
 - [X] AndroidX Migration
 - [X] Refactor to Kotlin
-- [ ] Fix Lint issues
-- [ ] Crashlytics Integration
+- [X] Fix Lint issues (Post Migration)
+- [X] Crashlytics Integration
 - [ ] Notification Service
 - [ ] Use Jetpack Components
 - [ ] Code Optimization
